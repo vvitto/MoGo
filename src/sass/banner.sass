@@ -1,0 +1,44 @@
+.banner
+    height: 100%
+    position: relative
+    color: white
+    font-family: "Montserrat"
+    +background("../assets/images/banner.png")
+    &:after
+        content: ""
+        position: absolute
+        top: 0px
+        left: 0px
+        right: 0px
+        bottom: 0px
+        background: linear-gradient($red, $yellow)
+        opacity: 0.9
+        z-index: 2
+    .container
+        height: 100%
+        position: relative
+        z-index: 100
+        display: flex
+        align-items: center
+        justify-content: center
+
+        
+        .preview
+            text-align: center
+            h1,h3
+                margin: 0px
+            h3
+                font-family: "Kaushan"
+                font-size: 62px
+            h1
+                font-size: 130px
+                line-height: 150px
+            .line
+                width: 40px
+                height: 3px
+                background-color: white
+                margin: 30px auto
+
+                
+            
+

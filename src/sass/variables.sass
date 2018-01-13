@@ -1,0 +1,20 @@
+$red: #f38181;
+$yellow: #fce38a;
+$blue: #95e1d3;
+
+@mixin background($img)
+    background-image: url($img)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+
+.btn
+    padding: 5px 25px
+    border: solid 3px white
+    display: inline-block
+    transition: all 200ms
+    font-weight: bold
+    cursor: pointer
+    &:hover
+        background-color: white
+        color: $red

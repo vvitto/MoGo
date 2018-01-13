@@ -1,0 +1,160 @@
+.btn {
+  padding: 5px 25px;
+  border: solid 3px white;
+  display: inline-block;
+  -webkit-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
+  font-weight: bold;
+  cursor: pointer; }
+  .btn:hover {
+    background-color: white;
+    color: #f38181; }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: normal;
+  src: url("../assets/fonts/Montserrat/Montserrat-Regular.ttf"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: bold;
+  src: url("../assets/fonts/Montserrat/Montserrat-ExtraBold.ttf"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: light;
+  src: url("../assets/fonts/Montserrat/Montserrat-Light.ttf"); }
+
+@font-face {
+  font-family: "Kaushan";
+  font-weight: normal;
+  src: url("../assets/fonts/Kaushan_Script/KaushanScript-Regular.ttf"); }
+
+html, body {
+  padding: 0px;
+  margin: 0px;
+  height: 100%; }
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  text-decoration: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  font-weight: normal;
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden; }
+
+.page-wrapper {
+  height: 100%; }
+
+.container {
+  max-width: 1200px;
+  margin: auto; }
+  @media screen and (max-width: 1200px) {
+    .container {
+      padding: 0px 20px; } }
+
+.navbar {
+  position: fixed;
+  z-index: 1000;
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  color: white;
+  font-family: "Montserrat"; }
+  .navbar .logo {
+    font-size: 24px;
+    margin: 0px;
+    float: left; }
+
+.menu {
+  float: right; }
+  .menu__item {
+    display: inline-block;
+    margin: 0px 20px;
+    -webkit-transition: border 200ms;
+    -o-transition: border 200ms;
+    transition: border 200ms;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms; }
+    .menu__item:after {
+      content: "";
+      position: absolute;
+      z-index: 100;
+      bottom: 0px;
+      left: 0px;
+      width: 100%;
+      -webkit-transition: all 300ms;
+      -o-transition: all 300ms;
+      transition: all 300ms; }
+    .menu__item:hover:after {
+      height: 3px;
+      background-color: #fce38a; }
+
+.banner {
+  height: 100%;
+  position: relative;
+  color: white;
+  font-family: "Montserrat";
+  background-image: url("../assets/images/banner.png");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+  .banner:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f38181), to(#fce38a));
+    background: -webkit-linear-gradient(#f38181, #fce38a);
+    background: -o-linear-gradient(#f38181, #fce38a);
+    background: linear-gradient(#f38181, #fce38a);
+    opacity: 0.9;
+    z-index: 2; }
+  .banner .container {
+    height: 100%;
+    position: relative;
+    z-index: 100;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .banner .container .preview {
+      text-align: center; }
+      .banner .container .preview h1, .banner .container .preview h3 {
+        margin: 0px; }
+      .banner .container .preview h3 {
+        font-family: "Kaushan";
+        font-size: 62px; }
+      .banner .container .preview h1 {
+        font-size: 130px;
+        line-height: 150px; }
+      .banner .container .preview .line {
+        width: 40px;
+        height: 3px;
+        background-color: white;
+        margin: 30px auto; }
