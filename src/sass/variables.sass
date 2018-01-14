@@ -1,6 +1,8 @@
 $red: #f38181;
 $yellow: #fce38a;
 $blue: #95e1d3;
+$darkGrey: #333333;
+
 
 @mixin background($img)
     background-image: url($img)
@@ -18,3 +20,23 @@ $blue: #95e1d3;
     &:hover
         background-color: white
         color: $red
+
+.title
+    text-align: center
+    margin-bottom: 90px
+    font-family: "Montserrat"
+    h2,h3
+        margin: 0px
+    h3
+        font-size: 24px
+        font-family: "Kaushan"
+    h2
+        font-size: 30px
+    .line
+        width: 60px
+        height: 3px
+        background-color: $red
+        margin: 30px auto
+    &__sub
+        color: #999
+        
