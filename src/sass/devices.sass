@@ -1,0 +1,27 @@
+.devices
+    padding-top: 90px
+    +background("../assets/images/devices.png")
+    
+    .container
+        text-align: center
+        position: relative
+        display: flex
+        justify-content: center
+        .tablet
+            width: 500px
+        .iphone
+            position: absolute
+            bottom: -80px
+            left: calc(50% + 150px)
+            width: 250px
+        @media screen and (max-width: 750px)
+            .iphone
+                float: right
+                left: auto
+                right: 0px
+        @media screen and (max-width: 500px)
+            display: block
+            .tablet
+                width: 100%
+            .iphone
+                display: none

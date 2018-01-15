@@ -93,7 +93,6 @@ body {
   width: 100%;
   line-height: 60px;
   color: white;
-  font-family: "Montserrat";
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
@@ -360,3 +359,42 @@ body {
       margin: 0px;
       font-size: 14px;
       color: #999; }
+
+.devices {
+  padding-top: 90px;
+  background-image: url("../assets/images/devices.png");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+  .devices .container {
+    text-align: center;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .devices .container .tablet {
+      width: 500px; }
+    .devices .container .iphone {
+      position: absolute;
+      bottom: -80px;
+      left: -webkit-calc(50% + 150px);
+      left: calc(50% + 150px);
+      width: 250px; }
+    @media screen and (max-width: 750px) {
+      .devices .container .iphone {
+        float: right;
+        left: auto;
+        right: 0px; } }
+    @media screen and (max-width: 500px) {
+      .devices .container {
+        display: block; }
+        .devices .container .tablet {
+          width: 100%; }
+        .devices .container .iphone {
+          display: none; } }
