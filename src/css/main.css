@@ -80,7 +80,8 @@ body {
   max-width: 1200px;
   margin: auto;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  font-family: "Montserrat"; }
   @media screen and (max-width: 1200px) {
     .container {
       padding: 0px 20px; } }
@@ -279,3 +280,83 @@ body {
                 transform: translate(10px, 10px); }
       .whatWeDo__item:hover .hover-input {
         opacity: 1.0; }
+
+.facts {
+  background-color: #95e1d3;
+  padding: 90px 0px; }
+  .facts .container {
+    color: white;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    font-family: "Montserrat";
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+  .facts__item {
+    text-align: center;
+    letter-spacing: 2px; }
+    .facts__item span {
+      font-size: 60px;
+      font-weight: bold; }
+    .facts__item p {
+      margin: 0px; }
+
+.services {
+  padding: 90px 0px;
+  color: #333; }
+  .services__list {
+    padding: 0px;
+    margin: 0px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .services__item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-basis: 30%;
+        -ms-flex-preferred-size: 30%;
+            flex-basis: 30%;
+    margin-bottom: 50px; }
+    @media screen and (max-width: 1024px) {
+      .services__item {
+        -webkit-flex-basis: 50%;
+            -ms-flex-preferred-size: 50%;
+                flex-basis: 50%; } }
+    @media screen and (max-width: 540px) {
+      .services__item {
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        text-align: center;
+        margin-bottom: 30px; }
+        .services__item i {
+          padding: 0px !important; } }
+    .services__item i {
+      color: #95e1d3;
+      padding: 0px 30px; }
+    .services__item h3 {
+      margin: 0px;
+      font-size: 16px; }
+    .services__item p {
+      margin: 0px;
+      font-size: 14px;
+      color: #999; }

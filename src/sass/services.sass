@@ -1,0 +1,36 @@
+.services
+    padding: 90px 0px
+    color: #333
+
+    &__list
+        padding: 0px
+        margin: 0px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__item
+        display: flex
+        flex-basis: 30%
+        margin-bottom: 50px
+        @media screen and (max-width: 1024px)
+            flex-basis: 50%
+        @media screen and (max-width: 540px)
+            // flex-basis: 100%
+            flex-wrap: wrap
+            justify-content: center
+            text-align: center
+            margin-bottom: 30px
+            i
+                padding: 0px !important
+        i
+            color: $blue
+            padding: 0px 30px
+        h3
+            margin: 0px
+            font-size: 16px
+            
+        p
+            margin: 0px
+            font-size: 14px
+            color: #999
+        
