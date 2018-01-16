@@ -398,3 +398,87 @@ body {
           width: 100%; }
         .devices .container .iphone {
           display: none; } }
+
+.main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .main .tab-list {
+    padding: 0px;
+    margin: 0px;
+    margin-left: 20px; }
+    .main .tab-list__item {
+      margin-bottom: 15px; }
+      .main .tab-list__item.active .wrapper {
+        display: block; }
+      .main .tab-list__item.active .toggleArrow {
+        -webkit-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+                transform: rotate(-90deg); }
+    .main .tab-list .wrapper {
+      display: none;
+      padding-top: 20px;
+      border-left: solid 1px #e5e5e5;
+      border-right: solid 1px #e5e5e5;
+      border-bottom: solid 1px #e5e5e5; }
+    .main .tab-list__title {
+      border: solid 1px #e5e5e5;
+      cursor: pointer;
+      padding: 0px 20px;
+      height: 50px;
+      line-height: 50px; }
+      .main .tab-list__title i, .main .tab-list__title h3 {
+        display: inline-block; }
+      .main .tab-list__title .toggleArrow {
+        float: right;
+        line-height: 50px;
+        -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+                transform: rotate(90deg);
+        color: #ccc; }
+      .main .tab-list__title h3 {
+        font-size: 16px;
+        margin: 0px;
+        margin-left: 20px; }
+    .main .tab-list__descr {
+      position: relative;
+      margin: 20px;
+      margin-top: 0px;
+      height: 130px;
+      overflow-y: scroll; }
+      .main .tab-list__descr::-webkit-scrollbar {
+        width: 5px;
+        -webkit-border-radius: 5px;
+                border-radius: 5px; }
+      .main .tab-list__descr::-webkit-scrollbar-track {
+        background-color: #e5e5e5; }
+      .main .tab-list__descr::-webkit-scrollbar-thumb {
+        background-color: #95e1d3;
+        -webkit-border-radius: 5px;
+                border-radius: 5px; }
+      .main .tab-list__descr p {
+        display: block;
+        margin: 0px;
+        font-size: 14px; }
+  @media screen and (max-width: 1000px) {
+    .main {
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .main img {
+        margin-bottom: 20px;
+        position: absolute;
+        display: block;
+        width: 100%; }
+      .main .tab-list {
+        width: 100%;
+        margin: 0px; } }

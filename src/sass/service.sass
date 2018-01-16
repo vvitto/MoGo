@@ -1,0 +1,74 @@
+
+.main
+    display: flex
+    justify-content: space-between
+    
+    .tab-list
+        padding: 0px
+        margin: 0px
+        margin-left: 20px
+        &__item
+            margin-bottom: 15px
+            
+            &.active
+                .wrapper
+                    display: block
+                .toggleArrow
+                    transform: rotate(-90deg)
+        .wrapper
+            display: none
+            padding-top: 20px
+            border:
+                left: solid 1px #e5e5e5
+                right: solid 1px #e5e5e5
+                bottom: solid 1px #e5e5e5 
+        &__title
+            border: solid 1px #e5e5e5
+            cursor: pointer
+            padding: 0px 20px
+            height: 50px
+            line-height: 50px
+            i, h3
+                display: inline-block
+            .toggleArrow
+                float: right
+                line-height: 50px
+                transform: rotate(90deg)
+                color: #ccc
+            h3
+                font-size: 16px
+                margin: 0px
+                margin-left: 20px
+               
+        &__descr
+            position: relative
+
+            margin: 20px
+            margin-top: 0px
+            height: 130px
+            overflow-y: scroll
+            
+            &::-webkit-scrollbar
+                width: 5px
+                border-radius: 5px
+            &::-webkit-scrollbar-track
+                background-color: #e5e5e5
+            &::-webkit-scrollbar-thumb
+                background-color: $blue
+                border-radius: 5px
+            p   
+                display: block
+                margin: 0px
+                font-size: 14px
+
+    @media screen and (max-width: 1000px)
+        flex-wrap: wrap
+        justify-content: center
+        img
+            margin-bottom: 20px
+            position: absolute
+            display: block
+            width: 100%
+        .tab-list
+            width: 100%
+            margin: 0px
