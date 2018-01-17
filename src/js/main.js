@@ -5,12 +5,24 @@ $(document).ready(function(){
             $(this).parent().addClass("active");
         }
     });
-    var scrollHeightPers;
-    setTimeout(function(){
-        scrollHeightPers = 160 / $(".tab-list__descr p").height();
-        console.log(scrollHeightPers);
-        $(".tab-list__scroll-inner").css("height", scrollHeightPers*100 + "%");
-    }, 1000);
+
+    var navbar = false;
+    $(window).on("scroll", function(){
+        if($(window).scrollTop() > 200){
+            console.log(1);
+            if(!navbar){
+                navbar = true;
+                $(".overlayer").addClass("navbar-start");
+            }
+        }else{
+            if(navbar){
+                navbar = false;
+                $(".overlayer").removeClass("navbar-start");
+            }
+        }
+    });
     
-    
+    // $(window).on("scroll", function(e){
+    //     console.log($(e.target).scrollTop());
+    // });
 });

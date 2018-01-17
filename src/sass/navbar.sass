@@ -6,10 +6,23 @@
     line-height: 60px
     color: white
     flex-wrap: wrap
+    .overlayer
+        background-color: $red
+        opacity: 0.0
+        height: 60px
+        width: 100%
+        position: fixed
+        transition: opacity 1000ms
+            
     .logo
         font-size: 24px
         margin: 0px
         float: left
+        position: relative
+        z-index: 100
+.navbar-start
+    opacity: 1.0 !important
+
 
 .menu
     float: right
@@ -31,4 +44,20 @@
         &:hover:after
             height: 3px
             background-color: $yellow
-  
+    .cart, .search
+        float: right
+        margin: 0px 20px
+        position: relative
+        z-index: 110
+        cursor: pointer
+        &:after
+            content: ""
+            position: absolute
+            z-index: 100
+            bottom: 0px
+            left: 0px
+            width: 100%
+            transition: all 300ms
+        &:hover:after
+            height: 3px
+            background-color: $yellow

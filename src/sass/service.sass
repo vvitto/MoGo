@@ -2,7 +2,6 @@
 .main
     display: flex
     justify-content: space-between
-    
     .tab-list
         padding: 0px
         margin: 0px
@@ -64,11 +63,14 @@
     @media screen and (max-width: 1000px)
         flex-wrap: wrap
         justify-content: center
-        img
+        
+        .services-img
             margin-bottom: 20px
-            position: absolute
-            display: block
-            width: 100%
+            flex-basis: 100%
+           
+            img
+                width: 100%
+            
         .tab-list
             width: 100%
             margin: 0px
