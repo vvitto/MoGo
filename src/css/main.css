@@ -648,15 +648,32 @@ body {
       -webkit-transform: translate(-10px, -10px);
           -ms-transform: translate(-10px, -10px);
               transform: translate(-10px, -10px); }
-    .team__img:hover .hover-input {
+    .team__img:hover .bg {
       opacity: 0.9;
       -webkit-transform: translate(-10px, -10px);
           -ms-transform: translate(-10px, -10px);
               transform: translate(-10px, -10px); }
+    .team__img:hover .hover-input a {
+      opacity: 1.0; }
   .team__img, .team__descr {
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%; }
+  .team .bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f38181), to(#fce38a));
+    background: -webkit-linear-gradient(#f38181, #fce38a);
+    background: -o-linear-gradient(#f38181, #fce38a);
+    background: linear-gradient(#f38181, #fce38a);
+    z-index: 200;
+    opacity: 0.0;
+    -webkit-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms; }
   .team .hover-input {
     position: absolute;
     top: 0px;
@@ -670,12 +687,35 @@ body {
     -webkit-transition: all 300ms;
     -o-transition: all 300ms;
     transition: all 300ms;
-    opacity: 0.0;
     font-size: 24px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#f38181), to(#fce38a));
-    background: -webkit-linear-gradient(#f38181, #fce38a);
-    background: -o-linear-gradient(#f38181, #fce38a);
-    background: linear-gradient(#f38181, #fce38a); }
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .team .hover-input a {
+      display: inline-block;
+      opacity: 0.0;
+      color: #f38181;
+      background-color: #fce38a;
+      width: 50px;
+      text-align: center;
+      line-height: 50px;
+      -webkit-transition: all 300ms;
+      -o-transition: all 300ms;
+      transition: all 300ms;
+      position: relative;
+      z-index: 250; }
+      .team .hover-input a:hover {
+        background-color: #f38181;
+        color: white; }
 
 .logos {
   background-image: url("../assets/images/logos.png");

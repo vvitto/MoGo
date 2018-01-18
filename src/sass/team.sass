@@ -36,11 +36,23 @@
             transition: all 300ms
         &:hover img
             transform: translate(-10px, -10px)
-        &:hover .hover-input
+        &:hover .bg
             opacity: 0.9
             transform: translate(-10px, -10px)
+        &:hover .hover-input a
+            opacity: 1.0
     &__img, &__descr
         flex-basis: 100%
+    .bg
+        position: absolute
+        top: 0px
+        left: 0px
+        right: 0px
+        bottom: 0px
+        background: linear-gradient($red, $yellow)
+        z-index: 200
+        opacity: 0.0
+        transition: all 300ms
     .hover-input
         position: absolute
         top: 0px
@@ -52,7 +64,21 @@
         z-index: 101
         font-weight: bold
         transition: all 300ms
-        opacity: 0.0
         font-size: 24px
-        background: linear-gradient($red, $yellow)
-        
+        display: flex
+        justify-content: center
+        align-items: center
+        a   
+            display: inline-block
+            opacity: 0.0
+            color: $red
+            background-color: $yellow
+            width: 50px
+            text-align: center
+            line-height: 50px
+            transition: all 300ms
+            position: relative
+            z-index: 250
+            &:hover
+                background-color: $red
+                color: white
