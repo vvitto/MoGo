@@ -1,0 +1,38 @@
+section.works
+    .container
+        .title
+            h3 What we Do?
+            h2 SOME OF OUR WORK
+            .line
+            p.title__sub Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    
+    ul.works__gallery
+        .works__part
+            each item in [1,2,5,4]
+                li.works__item
+                    .works__img
+                        img(src="./assets/images/work" + item + ".png")
+                    .works__descr
+                        .wrapper
+                            <i class="fa fa-picture-o fa-lg" aria-hidden="true"></i>
+                            h3 CREATIVITY DESIGNED
+                            span Lorem ipsum dolor
+        .works__part
+            .works__item
+                .works__img
+                    img(src="./assets/images/work3.png")
+                .works__descr
+                    .wrapper
+                        <i class="fa fa-picture-o fa-lg" aria-hidden="true"></i>
+                        h3 CREATIVITY DESIGNED
+                        span Lorem ipsum dolor
+            .works__part-inner   
+                each item in [6,7]
+                    li.works__item
+                        .works__img
+                            img(src="./assets/images/work" + item + ".png")
+                        .works__descr
+                            .wrapper
+                                <i class="fa fa-picture-o fa-lg" aria-hidden="true"></i>
+                                h3 CREATIVITY DESIGNED
+                                span Lorem ipsum dolor

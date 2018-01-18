@@ -1,0 +1,64 @@
+.works
+    padding: 90px 0px
+    ul
+        margin: 0px
+        padding: 0px
+        display: flex
+        flex-wrap: wrap
+            
+    &__img
+        transition: transform 300ms
+        img
+            float: left
+            width: 100%
+    &__part
+        flex-basis: 50%
+        display: flex
+        flex-wrap: wrap
+        @media screen and (max-width: 900px)
+            flex-basis: 100%
+        &-inner
+            display: flex
+            flex-wrap: wrap
+            flex-basis: 50%
+            .works__item
+                flex-basis: 100%
+    &__item
+        flex-basis: 50%
+        position: relative
+        overflow: hidden
+        text-align: center
+        color: white
+
+        &:hover
+            .works__img
+                transform: scale(1.1)
+            .works__descr
+                opacity: 0.9
+            
+        
+    &__descr
+        position: absolute
+        top: 0px
+        left: 0px
+        right: 0px
+        bottom: 0px
+        z-index: 1000
+        opacity: 0.0
+        background: linear-gradient($red, $yellow)
+        transition: all 300ms
+        cursor: pointer
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-wrap: wrap
+        font-family: "Montserrat"
+        i,h3,span
+            flex-basis: 100%
+        h3
+            font-size: 16px
+        span
+            font-size: 14px
+        @media screen and (max-width: 450px)
+            h3,span
+                margin: 0px
