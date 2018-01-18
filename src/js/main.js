@@ -22,7 +22,10 @@ $(document).ready(function(){
         }
     });
     
-    // $(window).on("scroll", function(e){
-    //     console.log($(e.target).scrollTop());
-    // });
+    $('.slider-wrapper').slick({
+        infinite: true,
+        appendArrows: $(".slider__arrow"),
+        prevArrow: $(".slider__arrow-prev"),
+        nextArrow: $(".slider__arrow-next")
+    });
 });

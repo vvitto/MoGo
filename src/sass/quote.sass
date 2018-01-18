@@ -1,0 +1,46 @@
+.quote
+    background-color: #f8f8f8
+    .slider
+        position: relative
+        padding: 50px 40px
+        &__arrow
+            position: absolute
+            cursor: pointer
+            color: #ccc
+        &__arrow-prev
+            top: 50%
+            transform: translateY(-50%)
+            left: 0px
+        &__arrow-next
+            top: 50%
+            transform: translateY(-50%)
+            right: 0px
+        .slide
+            box-sizing: border-box
+            display: flex
+            
+            &__content
+                padding: 5px 0px
+                span
+                    color: #999
+            &__img
+                display: inline-block
+                padding: 20px
+                color: $blue
+                border: solid 3px $blue
+                margin-right: 30px
+            
+            &__quote
+                &-wrapper
+                    display: flex
+                    align-items: center
+                    font-family: "Kaushan"
+                &-line
+                    display: inline-block
+                    width: 60px
+                    height: 3px
+                    margin-right: 10px
+                    background-color: $red
+                    
+            @media screen and (max-width: 780px)
+                flex-wrap: wrap
