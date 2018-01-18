@@ -520,43 +520,46 @@ body {
 
 .quote {
   background-color: #f8f8f8; }
-  .quote .slider {
+  .quote .slider1 {
     position: relative;
     padding: 50px 40px; }
-    .quote .slider__arrow {
+    .quote .slider1__arrow {
       position: absolute;
       cursor: pointer;
       color: #ccc; }
-    .quote .slider__arrow-prev {
+    .quote .slider1__arrow-prev {
       top: 50%;
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
               transform: translateY(-50%);
       left: 0px; }
-    .quote .slider__arrow-next {
+    .quote .slider1__arrow-next {
       top: 50%;
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
               transform: translateY(-50%);
       right: 0px; }
-    .quote .slider .slide {
+    .quote .slider1 .slide {
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
-      display: flex; }
-      .quote .slider .slide__content {
-        padding: 5px 0px; }
-        .quote .slider .slide__content span {
-          color: #999; }
-      .quote .slider .slide__img {
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      outline: none; }
+      .quote .slider1 .slide__content span {
+        color: #999; }
+      .quote .slider1 .slide__img {
         display: inline-block;
         padding: 20px;
         color: #95e1d3;
         border: solid 3px #95e1d3;
         margin-right: 30px; }
-      .quote .slider .slide__quote-wrapper {
+      .quote .slider1 .slide__quote-wrapper {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -566,14 +569,14 @@ body {
             -ms-flex-align: center;
                 align-items: center;
         font-family: "Kaushan"; }
-      .quote .slider .slide__quote-line {
+      .quote .slider1 .slide__quote-line {
         display: inline-block;
         width: 60px;
         height: 3px;
         margin-right: 10px;
         background-color: #f38181; }
       @media screen and (max-width: 780px) {
-        .quote .slider .slide {
+        .quote .slider1 .slide {
           -webkit-flex-wrap: wrap;
               -ms-flex-wrap: wrap;
                   flex-wrap: wrap; } }
@@ -727,7 +730,7 @@ body {
   height: 250px; }
 
 .works {
-  padding: 90px 0px; }
+  padding-top: 90px; }
   .works ul {
     margin: 0px;
     padding: 0px;
@@ -835,3 +838,65 @@ body {
     @media screen and (max-width: 450px) {
       .works__descr h3, .works__descr span {
         margin: 0px; } }
+
+.quote2 {
+  background-color: #f8f8f8; }
+  .quote2 .slider2 {
+    position: relative;
+    padding: 50px 40px; }
+    .quote2 .slider2__arrow {
+      position: absolute;
+      cursor: pointer;
+      color: #ccc; }
+    .quote2 .slider2__arrow-prev {
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      left: 0px; }
+    .quote2 .slider2__arrow-next {
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      right: 0px; }
+    .quote2 .slider2 .slide {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      outline: none; }
+      .quote2 .slider2 .slide__content span {
+        color: #999; }
+      .quote2 .slider2 .slide__img {
+        display: inline-block;
+        margin-right: 30px; }
+        .quote2 .slider2 .slide__img img {
+          width: 150px; }
+      .quote2 .slider2 .slide__quote-wrapper {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        font-family: "Kaushan"; }
+      .quote2 .slider2 .slide__quote-line {
+        display: inline-block;
+        width: 60px;
+        height: 3px;
+        margin-right: 10px;
+        background-color: #f38181; }
+      @media screen and (max-width: 780px) {
+        .quote2 .slider2 .slide {
+          -webkit-flex-wrap: wrap;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap; } }
