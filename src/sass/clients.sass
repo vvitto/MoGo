@@ -1,0 +1,42 @@
+.clients
+    padding: 90px 0px
+    +background("../assets/images/clients_bg.png")
+    .container
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+    .client
+        flex-basis: 50%
+        display: flex
+        padding: 30px
+        box-sizing: border-box
+        @media screen and (max-width: 850px)
+            flex-basis: 100%
+        @media screen and (max-width: 480px)
+            padding: 30px 0px
+        @media screen and (max-width: 320px)
+            flex-wrap: wrap
+            text-align: center
+            &__avatar
+                margin: auto
+            .line
+                margin: 7px auto !important
+        &__avatar
+            display: inline-block
+        &__descr
+            display: inline-block
+            font-size: 14px
+            margin-left: 20px
+ 
+            .line
+                width: 60px
+                height: 3px
+                background-color: $red
+                margin: 7px 0px
+        &__name
+            font-size: 18px
+            margin-top: 0px
+            margin-bottom: 5px
+        &__quote
+            margin: 0px
+            font-size: 14px
