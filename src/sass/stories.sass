@@ -1,0 +1,47 @@
+.stories
+    padding: 90px 0px
+    .container
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+    .blog
+        flex-basis: 30%
+        @media screen and (max-width: 900px)
+            flex-basis: 45%
+        @media screen and (max-width: 480px)
+            flex-basis: 100%
+        &__img
+            position: relative
+            cursor: pointer
+            img
+                width: 100%
+        &__date
+            position: absolute
+            bottom: 15px
+            left: -10px
+            padding: 12px
+            background-color: $blue
+            color: white
+            line-height: 15px
+            h3
+                margin: 0px
+            span
+                font-size: 12px
+        &__title
+            font-weight: bold
+            fint-size: 14px
+        &__descr
+            font-size: 12px
+        &__addition
+            padding: 15px 0px
+            margin-top: 15px
+            border-top: solid 1px #e5e5e5
+            display: flex
+        &__views, &__comments
+            margin-right: 10px
+            i
+                color: $blue
+                margin-right: 5px
+            span
+                color: #b7b7b7
+                font-size: 14px

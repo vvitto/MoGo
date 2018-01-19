@@ -966,3 +966,69 @@ body {
     .clients .client__quote {
       margin: 0px;
       font-size: 14px; }
+
+.stories {
+  padding: 90px 0px; }
+  .stories .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .stories .blog {
+    -webkit-flex-basis: 30%;
+        -ms-flex-preferred-size: 30%;
+            flex-basis: 30%; }
+    @media screen and (max-width: 900px) {
+      .stories .blog {
+        -webkit-flex-basis: 45%;
+            -ms-flex-preferred-size: 45%;
+                flex-basis: 45%; } }
+    @media screen and (max-width: 480px) {
+      .stories .blog {
+        -webkit-flex-basis: 100%;
+            -ms-flex-preferred-size: 100%;
+                flex-basis: 100%; } }
+    .stories .blog__img {
+      position: relative;
+      cursor: pointer; }
+      .stories .blog__img img {
+        width: 100%; }
+    .stories .blog__date {
+      position: absolute;
+      bottom: 15px;
+      left: -10px;
+      padding: 12px;
+      background-color: #95e1d3;
+      color: white;
+      line-height: 15px; }
+      .stories .blog__date h3 {
+        margin: 0px; }
+      .stories .blog__date span {
+        font-size: 12px; }
+    .stories .blog__title {
+      font-weight: bold;
+      fint-size: 14px; }
+    .stories .blog__descr {
+      font-size: 12px; }
+    .stories .blog__addition {
+      padding: 15px 0px;
+      margin-top: 15px;
+      border-top: solid 1px #e5e5e5;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+    .stories .blog__views, .stories .blog__comments {
+      margin-right: 10px; }
+      .stories .blog__views i, .stories .blog__comments i {
+        color: #95e1d3;
+        margin-right: 5px; }
+      .stories .blog__views span, .stories .blog__comments span {
+        color: #b7b7b7;
+        font-size: 14px; }
