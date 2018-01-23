@@ -35,4 +35,23 @@ $(document).ready(function(){
         prevArrow: $(".slider2__arrow-prev"),
         nextArrow: $(".slider2__arrow-next")
     });
+    $(".menu-bar").on("click", function(){
+        $(".menu").slideToggle();
+    });
+
+    var navbarLinks = document.querySelectorAll(".menu__item");
+    for(var i = 0; i < navbarLinks.length; i++){
+        navbarLinks[i].addEventListener("click", function(){
+            var tillScrollId = this.innerHTML;
+            $("html, body").animate({
+                "scrollTop": $("#" + tillScrollId).position().top   
+            }, 1000);
+        });
+    }
+
+    document.querySelector("#preview").addEventListener("click", function(){
+        $("html, body").animate({
+            "scrollTop": 0 + "px"
+        }, 1000);
+    });
 });
